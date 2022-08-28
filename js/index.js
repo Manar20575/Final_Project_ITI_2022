@@ -20,12 +20,12 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if (scroll < 1000) {
-          $(".navbar").css("background" , "");
+          $(".navbar").css("background" , "rgba(255, 255, 255, 45%)");
           $(".navbar-logo").css("color" , "rgba(255, 255, 255, 0.7)");
           $(".nav a").css("color" , "black");
         }
         else{
-          $(".navbar").css("background" , " rgba(6, 80, 228, 0.105)");
+          $(".navbar").css("background" , " rgb(6 80 228 / 45%)");
           $(".nav a").css("color" , " white");
         }
     })
