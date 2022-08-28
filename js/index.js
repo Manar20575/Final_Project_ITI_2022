@@ -25,7 +25,7 @@ $(document).ready(function(){
           $(".nav a").css("color" , "black");
         }
         else{
-          $(".navbar").css("background" , " black");
+          $(".navbar").css("background" , " rgba(6, 80, 228, 0.105)");
           $(".nav a").css("color" , " white");
         }
     })
