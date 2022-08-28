@@ -1,0 +1,894 @@
+/* 
+--------------------------------------STYLE MENU---------------------------------------------
+---------------------------------------------------------------------------------------------
+1. Genral
+2. Navbar
+3. Home
+4. start Home background animation 
+5. start Home Media 
+6. Start Services
+7. Start Media Services
+8. Start About
+9. Start Media about 
+10. Start Form
+11. Start Form Media
+12. Start Work 
+13. Start Work animation
+14. Start Media (Work)
+15. End Line
+16. Start Media (Line) 
+17. Start team member
+18. Start slider
+19. End Media (slider)
+10. End trends 
+21. Start Media (trends)
+22. End footer
+23. Start Media (footer)
+*/
+/* *************************************************************START*************************************************************************
+****************************************************************STYLE************************************************************************* */
+
+/* 1. Start General */
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h1{
+    width: 45%;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: normal;
+}
+h2{
+    word-spacing: 6px;
+    text-transform: capitalize;
+    font-family: normal;
+}
+h6{
+    word-spacing: 0.2rem;
+}
+.c-1{
+    color: rgba(255, 255, 255, 0.69);
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(6 80 228 / 25%);
+    z-index: -1;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.ltr-effect:hover:after{
+    width: 100%;
+}
+.nav-display{
+    display: block;
+}
+/* 1. End General */
+
+/* 2. Start Navbar */
+.navbar-logo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 700;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+}
+.nav{
+    justify-content: end;
+}
+/* 2. End Navbar */
+/* 3. Start Home */
+.home-section{
+    height: calc(100vh - 64px);
+    background-image: url("../images/im3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.home-contant{
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+#Mnav{
+    background-color: #fff;
+}
+#Mnav a{
+    color: black;
+}
+.p-home{
+    font-size: 0.8rem;
+    width: 52%;
+}
+hr{
+    height: 0.1rem;
+    margin: 0;
+    margin-right: 1.6rem;
+    width: 3rem;
+    opacity: 1;
+}
+.quote{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight:300 ;
+    word-spacing: 0.2rem;
+}
+.stbtn{
+    background-color: rgb(1, 46, 149);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: none;
+    word-spacing: 0.2rem;
+    border-radius:0%;
+    -webkit-border-radius:0%;
+    -moz-border-radius:0%;
+    -ms-border-radius:0%;
+    -o-border-radius:0%;
+}
+/* 3. End Home */
+/* 4. start Home background animation */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(6, 80, 228, 0.105);
+    animation: bghome 15s linear infinite;
+    bottom: -150px;
+    -webkit-animation: bghome 15s linear infinite;
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 16s;
+}
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes bghome {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/* 4. End Home background animation */
+/* 5. start Home Media */
+@media screen and (max-width:1246px) {
+    h1{
+        width: 65%;
+    }
+    .form-details h2 {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .stbtn{
+        padding: 1rem 1.3rem;
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .p-home{
+        display: none;
+    }
+    h1{
+        width: 100%;
+        padding: 25px 0px;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav ul{
+    width: 100%;
+    }
+    .nav ul li{
+        border-bottom: 1px solid blue;
+        padding: 5px;
+    }
+    .c{
+        border-bottom: none !important;
+    }
+}
+/*5. End Home Media */
+/* 6. Start Services */
+.contant i{
+    color: rgb(1, 46, 149);
+}
+.contant span{
+    font-size: 16px;
+    font-weight: 600;
+}
+.contant{
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    padding: 50px 20px;
+}
+.cards{
+    border: 1px solid rgba(174, 174, 174, 0.318);
+    /* padding: 50px 10px;z */
+}
+.cards:hover{
+    color: rgb(1, 46, 149);
+}
+/* 6. End Services */
+/* 7. Start Media Services */
+@media screen and (max-width:600px) {
+    .cards {
+        width: 100% !important;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .contant p{
+        margin-top: 10px;
+    }
+}
+/* 7. End Media Services */
+/* 8. Start about */
+.about-section{
+    background-image: url("../images/im15.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about-section h2{
+    width: 50%;
+}
+.form-details h2{
+    width: 100%;
+}
+.work h2, .services-section h2{
+    width:39%;
+}
+.services-section, .form, .home-section,  .work{
+    padding: 9rem 0;
+}
+.about-section p {
+    color:rgba(255, 255, 255, 0.75);
+    font-family: 'Merriweather', serif;
+}
+.img{
+    padding: 0;
+}
+.both{
+    display: flex;
+}
+.stbtn:hover{
+    background-color: white;
+}
+/* 8. End about */
+/* 9. Start Media about */
+@media screen and (max-width: 1024px) {
+    .contant{
+        padding: 20px 20px;        
+    }
+    .about-section h2{
+        width: 72%;
+    }
+    .work h2, .services-section h2, .about-section h2{
+        width: 100%;
+    }
+    .about-section span{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .services-section, .form, .home-section, .work {
+        padding: 4rem 0;
+    }
+    .work h2, .services-section h2, .about-section h2{
+        width: 100%;
+    }
+    .ser-card{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .contant {
+        padding: 20px 10px;
+    }
+    .about-section p{
+        display: none;
+    }
+    .about-section h6{
+        font-size: revert;
+    }
+    .about-section h2{
+        font-size: 21px;
+    }
+    .about-section span{
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    hr{
+        margin-right: 0.6rem;
+        width: 1rem;
+    }
+    .quote{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .stbtn{
+        font-size: x-small;
+        padding: 0.6rem 0.5rem;
+        margin-bottom: 15px;
+    }
+}
+/* 9. End Media about */
+/* 10.Start Form */
+.form{
+    position: relative;
+    background: repeating-linear-gradient(#e7f2fb, #e7f2fb 75%, #fdfdfd 25%, #fdfdfd 100%);
+}
+form{
+    position: absolute;
+}
+.form-details{
+    color: white;
+    background-image: url("../images/im15.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 55%;
+    margin: auto;
+}
+.control{
+    display: block;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    appearance: show;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+}
+.both-group{
+    display: flex;
+}
+.form-group{
+    margin-right: 0.8rem;
+    width: 50%;
+}
+/* 10.End Form */
+/* 11. Start Form Media */
+@media screen and (max-width:1246px) {
+    .form-details h2 {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .both-group{
+        display: block;
+    }
+    .form-group{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .form-details{
+        width: 100%;
+    }
+    .form-details span{
+        padding-top: 20px;
+    }
+    .form-details h2{
+        width: 100%;
+        font-size: 21px;
+    }
+    .form-group{
+        padding: 0 15px;
+    }
+    .form{
+        padding: 0;
+    }
+    h2{
+        font-size: 18px;
+    }
+}
+/* 11. End Form Media */
+/* 12. Start Work */
+.nav-section{
+    display: flex;
+    list-style: none;
+    /* width: 35%; */
+    justify-content: flex-end;
+    margin-top: -78px;
+}
+.nav-section li {
+    padding: 0 20px;
+}
+.pro-details{
+    background-color: #e7f2fb;
+    width: 80%;
+    margin-top: -46px;
+    position: relative;
+}
+.pro-details span{
+    padding-top: 20px;
+}
+.nav-section a{
+    color: #6c757d; 
+}
+.nav-section a:hover{
+    color: #0d6efd;
+}
+.pro{
+    width: 48%;
+}
+.working{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.img-pro:hover{
+    animation: rotate-center 0.8s ease-in-out both;
+    -webkit-animation: rotate-center 0.8s ease-in-out both;
+}
+/* 12. End Work */
+/* 13. Start Work animation */
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media(max-width:1024px) {
+    .nav-section {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 30px;
+        border-bottom: 1px solid black;
+    }
+    .working{
+        margin-top: 60px;
+    }
+    .work h2 {
+        font-size: 21px;
+        position: relative;
+        top: -15px;
+        font-family: normal;
+    }
+}
+/*  End Work animation */
+/* 14. Start Media (Work) */
+@media screen and (max-width: 600px) {
+    .work{
+        padding: 0;
+    }
+    .work span{
+        font-size: 17px;
+    }
+    .pro span{
+        padding-right: 10px!important;
+        padding-left: 10px!important;
+        padding-top: 5px !important;
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+    .pro{
+        width: 100%;
+    }
+    .nav-section{
+        justify-content: space-around;
+        margin-top: -33px;
+        font-size: 12px;
+    }
+    .nav-section li{
+        padding: 0;
+    }
+    .pro h6{
+        padding-right: 10px!important;
+        padding-left: 10px!important;
+        padding-bottom: 12px!important;
+        padding-top: 0 !important;
+        font-size: 15px;
+    }
+}
+/* 14. End Media (Work) */
+/* 15. Start Line */
+.line{
+    background-image: url("../images/im15.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.line h2{
+    width: 35%;
+}
+.line-contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.line-title{
+text-transform: none;
+line-height: 3rem;
+}
+/* 15. End Line */
+/* 16. Start Media (Line)  */
+@media screen and (max-width: 600px) {
+    .line h2{
+        width: 100%;
+        margin-bottom: 0!important;
+        font-size: 22px;
+    }
+    .line-contant{
+        justify-content: center;
+    }
+    .line-contant a{
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+
+    }
+}
+/* 16. End Media (Line)  */
+/* 17. Start team member */
+.team-member h2{
+    width: 28%;
+}
+.bx{
+    background-color:#aac8e347 ;
+    padding: 0;
+    margin: 5px 0;
+}
+.bxs p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+.box-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px ,1fr));
+    gap: 10px 10px;
+}
+.box-content span{
+    font-size: 16px;
+}
+/* 17. End team member */
+/* 18. Start slider */
+.slider{
+    background-image: url("../images/im11.png");
+    color: white;
+}
+.arrow{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -70px;
+    top: -100px;
+}
+.slide3 p {
+    width: 50%;
+}
+.feedback img{
+    width: 22%;
+    height: 0%;
+}
+.prev, .next{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgb(255, 255, 255);
+    padding: 3px 9px;
+}
+/* 18. End slider */
+/* 19. Start  Media (slider) */
+@media screen and (max-width: 600px) {
+    .team-member{
+        padding: 0!important;
+    }
+    .team-member span{
+        font-size: 17px;
+        margin-top: 25px !important;
+    }
+    .team-member h2 {
+        width: 100%;
+        margin-bottom: 15px !important;
+    }
+    .box-content span {
+        font-size: 12px;
+    }
+    .bx{
+        margin-bottom: 15px;
+        margin-right: 0!important;
+    }
+
+    .team-member h4{
+        font-size: 18px;
+    }
+    .slide3 {
+        padding-top: 0!important;
+    }
+    .slide3 p {
+        width: 65%;
+        font-size: 12px;
+    }
+    .arrow {
+        justify-content: space-between;
+    }
+    .feedback{
+        width: 41%!important;
+        align-items: center;
+    }
+    .feedback img{
+        width: 28%;
+    }
+    .feedback h3{
+        font-size: 15px;
+    }
+    .name p{
+        font-size: 11px;
+    }
+
+}
+/* 19. End Media (slider) */
+/* 20. Start trends */
+.pro-trend{
+        background-color: white;
+        width: 75%;
+        margin-top: -56px;
+        position: relative;
+}
+.date{
+    font-weight: 300;
+}
+.bg-trend{
+    background-color: #e8f2fbd5;
+}
+strong{
+    line-height: 2.8rem;
+}
+.trend-details{
+    width: 83%;
+}
+.working span{
+    font-size: 16px
+}
+/* 20. End trends */
+/* 21. Start Media (trends) */
+@media(max-width:1024px) {
+    .trend-details {
+        padding: 0 20px !important;
+    }
+
+    strong {
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    .trend-details p {
+        font-size: 14px;
+    }
+
+    .working span {
+        font-size: 14px;
+        padding-left: 20px !important;
+    }
+
+    .pro-trend p {
+        padding: 10px !important;
+        font-size: 12px;
+    }
+
+    .pro-trend {
+        margin-top: -85px;
+    }
+
+    .line h2 {
+        width: 80%;
+    }
+
+    .team-member h2 {
+        width: 95%;
+    }
+
+    .form-details {
+        width: 100%;
+    }
+
+    .form {
+        padding: 0 !important;
+    }
+
+    .work {
+        padding: 10px 0;
+    }
+    .feedback img{
+        width: 60%;
+        height: 0%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .trends span{
+        font-size: 17px;
+    }
+    .trend-details{
+        padding: 5px 10px!important;
+        margin-top: -50px;
+    }
+    .trend-details p{
+        display: none;
+    }
+    .trend-details h3{
+        margin-bottom: 0!important;
+    }
+    strong{
+        line-height: 0.2rem;
+        font-size: 12px;
+    }
+    .working span{
+        font-size: 10px;
+        margin-bottom: 5px !important;
+        margin-top: 0!important;
+    }
+    .pro-trend p {
+        font-size: 12px;
+        padding: 2px 0px!important;
+        margin-bottom: 0!important;
+    }
+    .pro-trend{
+        margin-top: -10px;
+    }
+}
+/* 21. End Media (trends) */
+/* 22. Start footer */
+.footer-bg{
+    background-image: url(../images/im14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.footer-bg h5{
+    color: white;
+    font-size: 16px;
+}
+.send{
+    border: none;
+    background-color: rgba(2, 20, 62, 0.284);
+    border-radius: 0%;
+    font-weight: 300;
+}
+.footer-in{
+    border: none;
+    font-weight: 300;
+    border-radius: 0%;
+    background-color: #6c757d23;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+/* 22. End footer */
+/* 23. Start Media (footer) */
+@media screen and (max-width: 1024px) {
+    .col-sm-3{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer{
+        justify-content: center;
+    }
+    footer:nth-child(4)	{
+        width: 100% !important;
+    }
+    .col-sm-3{
+        width: 50%;
+    }
+    .col-xs-1{
+        width: 100%;
+    }
+}
+/* 23. End Media (footer) */
+/* *************************************************************END*************************************************************************
+****************************************************************STYLE************************************************************************* */

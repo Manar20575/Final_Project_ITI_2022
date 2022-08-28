@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon -->
+    <link href="./images/icon.png" rel="icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Slick-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&family=Lato:wght@100;300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,500&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;500;700&family=Rubik:ital,wght@0,400;0,700;1,500&family=Work+Sans:wght@100;300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;700&family=Lato:wght@100;300;400;700;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,500&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;500;700&family=Rubik:ital,wght@0,400;0,700;1,500&family=Work+Sans:wght@100;300;400;500;600;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Final Project ITI</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-shrink" id="Mnav">
+        <div class="container">
+            <a class="navbar-logo"><img src="./images/logo.png" alt=""></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" id="nav-btn" onclick="myFunction()"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse nav" id="nav-dis">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#casestudies">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item c"><a class="nav-link" href="#contact" >Contact</a></li>
+                </ul>
+                <div class="btn"><button class="btn-primary py-2 btn nav-button" style="border: none; border-radius: 0%;">01654.066.456</button></div>
+            </div>
+        </div>
+    </nav>
+    <!-- home Sectiom -->
+    <section class="home-section">
+        <div class="container px-4 px-lg-5 ">
+            <div class="bg-animation" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+            <div class=" home-contant row ">
+                <div class="col-lg-8 align-self-end mb-xl-4 mb-md-2 ">
+                    <span class="quote text-primary mb-3"><hr class="divider bg-primary">committed to success</span>
+                    <h1 class="">Dont Feel Helpless We fight for Justice</h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="p-home mb-xl-4 mb-md-2">Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme!</p>
+                    <a class=" btn stbtn" href="#about">Learn About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services Section -->
+    <section class="services-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <span class="quote text-primary mb-3"><hr class="divider bg-primary">committed to success</span>
+            <h2 class="mb-5 ">Area of practice that can help you to win</h2>
+            <div class="row  gx-md-2" style="justify-content: space-evenly;">
+                <div class="col-6 col-md-3 cards ltr-effect">
+                    <div class="contant mt-xl-4 mt-md-2 mb-xl-4 mb-md-2">
+                        <div class="mb-xl-4 mb-md-2 ser-card"><i class="fa-solid fa-heart fa-3x"></i></div>
+                        <span class="mb-xl-2 mb-md-1">Health Low</span>
+                        <p class="text-muted">Our themes are updated regularly to keep them bug free!</p>
+                        <a href="#" class="text-muted mb-xl-2 mb-md-0">Read More <i class="fa-solid fa-greater-than text-muted"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cards ltr-effect">
+                    <div class="contant mt-xl-4 mt-md-2 mb-xl-4 mb-md-2">
+                        <div class="mb-xl-4 mb-md-2 ser-card"><i class="fa-solid fa-stethoscope fa-3x"></i></div>
+                        <span class="mb-xl-2 mb-md-1">Up to Date</span>
+                        <p class="text-muted">All dependencies are kept current to keep things fresh.</p>
+                        <a href="#" class="text-muted mb-xl-2 mb-md-0">Read More <i class="fa-solid fa-greater-than text-muted "></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 cards ltr-effect">
+                    <div class="contant mt-xl-4 mt-md-2 mb-xl-4 mb-md-2">
+                        <div class="mb-xl-4 mb-md-2 ser-card"><i class="fa-solid fa-shield-heart fa-3x"></i></div>
+                        <span class="mb-xl-2 mb-md-1">Made with Love</span>
+                        <p class="text-muted">Is it really open source if it's not made with love?</p>
+                        <a href="#" class="text-muted mb-xl-2 mb-md-0">Read More <i class="fa-solid fa-greater-than text-muted "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- About Section -->
+    <section class="about-section" id="about">
+            <div class="imgAdetails" style="color: white;">
+                <div class="both">
+                    <div class="img col w-50">
+                        <img src="./images/im2.png" class="w-100 h-100" alt="">
+                    </div>
+                    <div class="details col mt-xl-5 mb-md-3 px-xl-5 w-50 py-2">
+                        <span class="quote mb-xl-4 mb-md-2 mt-xl-4 mb-sm-2 mt-sm-2"><hr class="divider ">about our law agency</span>
+                        <h2 class="mb-xl-5 mb-md-3">we are commited for better service</h2>
+                        <h6 class="mt-xl-5 mt-md-3 mb-xl-3 mb-md-1">Mollit anim laborum duis adseu dolor iuyn voluptate velit
+                            ess cillum dolore egru lofrre dsu.</h6>
+                        <p class="py-md-3">Mollit anim laborum.Dvcuis aute serunt iruxvfg dhjkolohr indd re voluptate
+                            velit esscillumlore eu quife nrulla parihatur. Excghcepteur sfwsignjnt occa
+                            cupidatat non aute iruxvfg dhjinulpadeserunt moll.</p>
+                        <a class=" btn stbtn mt-xl-4 mb-md-3 mb-xl-4 mb-md-2" href="#about">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Form Section -->
+    <section class="form">
+        <div class="container">
+            <div class="form-details py-xl-5 px-xl-5 py-md-3 px-md-3 mt-5">
+                <span class="quote mb-xl-4 mt-xl-4 px-5"><hr class="divider ">FILL UP TO GET A QOTE</span>
+                <h2 class="mb-5 px-5">World's Leading Law
+                    Consultency Agency!</h2>
+            <div class="row gx-4 gx-lg-5 mb-5 justify-content-center">
+                <form action="" class=" was-validated text-center col-lg-10 form-sec">
+                    <div class="both-group">
+                        <div class="form-group ">
+                            <input type="text" class="form-control" id="username" placeholder="Name" name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control" id="uname" placeholder="Phone" name="p-home" required>
+                            <div class="valid-feedback ">Valid.</div>
+                            <div class="invalid-feedback">username should be more 3 char.</div>
+                        </div>
+                    </div>
+                    <div class="both-group">
+                        <div class="form-group ">
+                            <select name=""  id="uname" class="control text-muted w-100" required>
+                                <option value="">Heath Law</option>
+                                <option value="">Normal</option>
+                                <option value="">Over</option>
+                            </select>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control" id="uname" placeholder="Email" name="mail" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <textarea type="text-Area" class="form-control" id="uname"  placeholder="Message" name="p-home" required></textarea>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <button type="submit" id="submit" class="btn stbtn mt-3">Submit Now</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Our Work -->
+    <section class="work">
+        <div class="container">
+            <span class="quote mb-4 mt-5 text-primary"><hr class="divider ">OUR RECENT WORK</span>
+            <h2 class="mb-5 ">Reliable, Effective & Wining
+                Law For Customers</h2>
+            <div class="">
+                <div class="container">
+                    <ul class="nav-section">
+                        <li><a href="#" class="text-primary">Accident Law</a></li>
+                        <li><a href="#" class="two">Health Law</a></li>
+                        <li><a href="#" class="two">Insurance Law</a></li>
+                    </ul>
+                    </div>
+                </nav>
+                <div class="working">
+                    <div class="pro">
+                        <div class="img-pro ">
+                            <img src="./images/im4.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-details mb-5">
+                            <span class="quote text-primary px-5"><hr class="divider ">Car Accident Law</span>
+                            <h6 class="px-5 py-3 mb-5">Within the construction industry as
+                                their overdraft</h6>
+                        </div>
+                    </div>
+                    <div class="pro ">
+                        <div class="img-pro">
+                            <img src="./images/im5.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-details mb-5">
+                            <span class="quote text-primary px-5"><hr class="divider ">Car Accident Law</span>
+                            <h6 class="px-5 py-3 mb-5">Construction industry as their over
+                                draft for critical law</h6>
+                        </div>
+                    </div>
+                    <div class="pro ">
+                        <div class="img-pro">
+                            <img src="./images/im6.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-details mb-5">
+                            <span class="quote text-primary px-5"><hr class="divider ">Car Accident Law</span>
+                            <h6 class="px-5 py-3 mb-5">Retail banks wake up to digital lending
+                                this year</h6>
+                        </div>
+                    </div>
+                    <div class="pro ">
+                        <div class="img-pro">
+                            <img src="./images/im7.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-details mb5">
+                            <span class="quote text-primary px-5"><hr class="divider ">Car Accident Law</span>
+                            <h6 class="px-5 py-3 mb5">Within the construction industry as
+                                their overdraft</h6>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!-- Line Section -->
+    <section class="line text-white bg-dark">
+        <div class="container px-4 px-lg-5">
+            <div class="line-contant">
+            <h2 class="line-title mb-4 py-xl-5 py-md-5">Are you Searching For a
+                First-Class Consultant?</h2>
+            <a class="btn stbtn mb-5 mt-4" style="background-color:  rgb(1, 46, 149); color:rgb(255, 255, 255)" href="#">Contact Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Team  member -->
+    <div class="team-member py-5">
+        <div class="container">
+            <span class="quote mb-4 mt-5 text-primary"><hr class="divider ">OUR LAWYERS</span>
+                        <h2 class="mb-5 ">Meet Our Dedicated
+                            Team Members.</h2>
+            <div class=" box-content mb-5">
+                <div class=" bx">
+                    <div class="img_bx"> 
+                        <img src="./images/im8.png " class="w-100">
+                    </div>
+                    <h4 class="mt-4 px-5">Ethan Welch</h4>
+                    <span class="quote mb-4 mt-2 px-5 text-primary"><hr class="divider ">Chir Lawyer</span>
+                </div>
+                <div class="bx">
+                    <div class="img_bx">
+                        <img src="./Images/im9.png" class="w-100">
+                    </div>
+                    <h4 class="mt-4 px-5">Trevor Stanley</h4>
+                    <span class="quote mb-4 mt-2 px-5 text-primary"><hr class="divider ">Junior Lawyer</span>
+                </div>
+                <div class=" bx">
+                    <div class="img_bx">
+                        <img src="./Images/im10.png" class="w-100">
+                    </div>
+                    <h4 class="mt-4 px-5">Allen Guzman</h4>
+                    <span class="quote mb-4 mt-2 px-5 text-primary"><hr class="divider ">Senior Lawyer</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slick -->
+    <section id="view py-5"><!-- Start View -->
+        <div class="slider py-5">
+            <div class="slide3 text-center py-5">
+                <i class="fa-solid fa-quote-right fa-3x mb-3"></i>
+                <p class=" mx-auto mb-3 text-muted">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis por
+                incididunt ut labore et dolore mas.</p>
+                <div class="feedback rounded-circle mx-auto w-25 d-flex">
+                    <img src="./images/im12.png">
+                    <div class="name px-3 ">
+                        <h3>Oliva jems</h3>
+                        <p class="text-muted">Chef Lawyer</p>
+                    </div>
+                </div> 
+                <div class="arrow px-5">
+                    <div class="prev rounded">
+                        <i class="fa-solid fa-arrow-left fa-1x"></i>
+                    </div>
+                    <div class="next rounded">
+                        <i class="fa-solid fa-arrow-right fa-1x"></i>
+                    </div>
+                </div>
+        </div>
+        <div class="slide3 text-center py-5">
+            <i class="fa-solid fa-quote-right fa-3x mb-3"></i>
+            <p class="mx-auto mb-3 text-muted">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis por
+            incididunt ut labore et dolore mas.</p>
+            <div class="feedback rounded-circle mx-auto w-25 d-flex">
+                <img src="./images/im12.png">
+                <div class="name px-3 ">
+                    <h3>Oliva jems</h3>
+                    <p class="text-muted">Chef Lawyer</p>
+                </div>
+            </div> 
+            <div class="arrow px-5">
+                <div class="prev rounded">
+                    <i class="fa-solid fa-arrow-left fa-1x"></i>
+                </div>
+                <div class="next rounded">
+                    <i class="fa-solid fa-arrow-right fa-1x"></i>
+                </div>
+            </div>
+    </div>
+    <div class="slide3 text-center py-5">
+        <i class="fa-solid fa-quote-right fa-3x mb-3"></i>
+        <p class="mx-auto mb-3 text-muted">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis por
+        incididunt ut labore et dolore mas.</p>
+        <div class="feedback rounded-circle mx-auto w-25 d-flex">
+            <img src="./images/im12.png">
+            <div class="name px-3 ">
+                <h3>Oliva jems</h3>
+                <p class="text-muted">Chef Lawyer</p>
+            </div>
+        </div> 
+        <div class="arrow px-5">
+            <div class="prev rounded">
+                <i class="fa-solid fa-arrow-left fa-1x"></i>
+            </div>
+            <div class="next rounded">
+                <i class="fa-solid fa-arrow-right fa-1x"></i>
+            </div>
+        </div>
+</div>
+        </div>
+    </section><!-- End View -->
+    <!-- Trends -->
+    <section class="trends">
+        <div class="container">
+            <span class="quote mb-4 mt-5 text-primary"><hr class="divider ">OUR RECENT WORK</span>
+            <h2 class="mb-5 ">Reliable, Effective & Wining
+                Law For Customers</h2>
+                <div class="working">
+                    <div class="pro bg-trend">
+                        <div class="img-pro">
+                            <img src="./images/im1.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-trend mb-5">
+                            <p class="px-5 py-3 date">By Admin - October 27, 2020</p>
+                        </div>
+                        <div class="trend-details px-5">
+                            <h3 class="mb-4"><strong>16 Easy Ideas to Use in Our
+                                Everyday Stuff in Kitchen.</strong></h3>
+                            <p class="text-muted">Amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magnua Quis
+                                ipsum suspendisse ultrices gra.</p>
+                        </div>
+                        <span class="quote mb-5 mt-4 text-primary px-5 text-capitalize" ><hr class="divider ">Read More</span>
+                    </div>
+                    <div class="pro bg-trend">
+                        <div class="img-pro">
+                            <img src="./images/im13.png" class="w-100" alt="">
+                        </div>
+                        <div class="pro-trend mb-5">
+                            <p class="px-5 py-3 date">By Admin - October 27, 2020</p>
+                        </div>
+                        <div class="trend-details px-5">
+                            <h3 class="mb-4"><strong>16 Easy Ideas to Use in Our
+                                Everyday Stuff in Kitchen.</strong></h3>
+                            <p class="text-muted">Amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magnua Quis
+                                ipsum suspendisse ultrices gra.</p>
+                        </div>
+                        <span class="quote mb-5 mt-4 text-primary px-5 text-capitalize"><hr class="divider ">Read More</span>
+                    </div>
+        </div>
+        </div>
+    </section>
+    <div class="container-fluid">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 py-5 px-5 border-top footer-bg">
+            <div class="col-3 col-sm-3 mb-3 ">
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 navbar-logo"><img class="mb-4" src="./images/logo.png" alt=""></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 mb-4 c-1">Receive updates and latest news
+                    direct from Simply enter.</a></li>
+                <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-muted">
+                        <h3>
+                            <pre class="mb-0"><span style="color: white;">+564 </span><span class="text-primary">7885 3222</span></pre>
+                        </h3>
+                    </a>
+                </li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 c-1">youremail@gmail.com</a></li>
+            </ul>
+            </div>
+            <div class="col col-sm-3 mb-3">
+            <h5>OUR SUPPORT</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted mt-4">Advanced</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Management</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Corporate</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Customer</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Information</a></li>
+            </ul>
+            </div>
+            <div class="col col-sm-3 col-xs-1 mb-3">
+            <h5>QUICK LINK</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted mt-4">New Law</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Licenses</a></li>
+            </ul>
+            </div>
+            <div class="col-3 col-sm-3 col-xs-1 mb-3">
+            <h5>NEWSLATTER</h5>
+            <ul class="nav flex-column ">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted mt-4 mb-4">Subscribe now to get daily updates</a></li>
+                <li class="nav-item mb-2 d-flex"><input type="text" class="form-control footer-in px-4" id="uname" placeholder="Email Address" name="mail" required><button class="send text-primary px-3">Send</button></li>
+            </ul>
+            </div>
+        </footer>
+    </div>
+<!-- All Scripts -->
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/index.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 1000,
+    prevArrow:'.prev',
+    nextArrow :'.next'
+    });
+    });
+    </script>
+</body>
+</html>
