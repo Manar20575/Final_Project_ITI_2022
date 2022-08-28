@@ -269,10 +269,23 @@ hr{
         width: 85%;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 990px) {
     .stbtn{
         padding: 1rem 1.3rem;
         font-size: 0.8rem;
+    }
+    .nav-button{
+        display: none;
+    }
+    .nav ul{
+    width: 100%;
+    }
+    .nav ul li{
+        border-bottom: 1px solid blue;
+        padding: 5px;
+    }
+    .c{
+        border-bottom: none !important;
     }
 }
 @media screen and (max-width: 600px) {
