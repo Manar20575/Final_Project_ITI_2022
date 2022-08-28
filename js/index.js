@@ -1,5 +1,8 @@
 
 // Close the dropdown menu if the user clicks outside of it
+function myFunction() {
+  document.getElementById("nav-dis").classList.toggle("show");
+}
 window.onclick = function(event) {
   if (!event.target.matches('#nav-btn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
